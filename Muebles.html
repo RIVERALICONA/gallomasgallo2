@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+        background-color: rgba(255, 255, 0, 0.256);
+      }
+      nav img{
+    width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header-->
+ <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="imagenes/images (2).jpg" alt="INTAE"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Muebles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="INDEX.html">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Electrodomesticos.html">Electrodomesticos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-matricula" href="mucho mas.html">Mucho mas</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!--fin Header-->
+<div class="d-flex align-items-center mt-4 text-warning">
+  <strong role="status">Loading...</strong>
+  <div class="spinner-border ms-auto" aria-hidden="true"></div>
+</div>
+   
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Error!!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Lo sentimos a ocurrido un problema con nuestro sitio <br>
+            Intenta solucionarlo en el boton "Siguiente"
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-danger" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Siguiente</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Lo sentimos</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Ha ocurrido un error <br>
+            Revisa tu conexion a internet y vuelve a intentarlo
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-danger" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Volver a intentarlo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-outline-danger mt-4" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Cargar de nuevo</button>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

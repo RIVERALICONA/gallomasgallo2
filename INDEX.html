@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{
+        background-color: rgba(255, 255, 0, 0.256);
+      }
+      nav img{
+    width: 80px;
+      }
+
+
+    </style>
+</head>
+  <body>
+    
+    <!--header-->
+    <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="imagenes/images (2).jpg" alt="INTAE"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Electrodomesticos.html">Electrodomesticos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Muebles.html">Muebles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-matricula" href="mucho mas.html">Mucho mas</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+
+    <!--fin Header-->
+    <!--carrusel-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/descarga (1).jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/images (1).jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/images.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <!-- fin carrusel-->
+    <!--Motos-->
+    <section id="profesores" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            
+            <h1>Ofertas de Motos</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card" >
+                <img src="imagenes/descarga (3).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Raptor 250 cc</h5>
+              
+                  <p class="card-text">Precio:Lps.38,995 <br>
+                    Cuota:Lps.1,204
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-md-4 mb-4">
+              <div class="card" >
+                <img src="imagenes/descarga (6).jpg"class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">COBRA 150cc</h5>
+                  
+                  <p class="card-text">Precio:Lps.17,995 <br>
+                    Cuota:Lps.408</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card" >
+                <img src="imagenes/descarga (7).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">HURRICANE 200cc</h5>
+                  
+                  <p class="card-text">Precio:Lps.43,995 <br>
+                    Cuota:Lps.2,900</p>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fin Motos-->
+    
+    <!--Contactanos-->
+    <section id="contacto">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1>¿Que te parece el inicio de nuestra pagina web?</h1>
+            <p>Dejanos tu opinion aqui</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+           
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu Nombre">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+           
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu Apellido">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="mb-3">
+              
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu opinion aqui"></textarea>
+            </div>
+          </div>
+          <div class="col">
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-warning mb-2" style="width: 100%;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Enviar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Gracias por tu opinion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Comparte nuestra pagina 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-outline-warning mb-2" style="width: 100%;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Estamos ubicados</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Tiendas en San Pedro Sula</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul>
+      <li>Barrio el centro, 3ave .4 y 5 Calle frente a las oficinas de Loto</li>
+      <li>Barrio el centro, 7 Calle, Plaza del sol arriba de la linea</li>
+      <li>Barrio el centro, entre la 2 y 3ave, Frente a la Catedral </li>
+      <li>Colonia Calpules, 27 Calle, Plaza Palmerosa</li>
+      <li>Gran central Metropolitana, Salida al Sur</li>
+    </ul>
+  </div>
+</div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fin Contactanos-->
+   
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
